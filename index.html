@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Sabor Caseiro</title>
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body class="font-sans">
+  <!-- Hero -->
+  <header
+    class="bg-[#435326] text-white text-center flex items-center justify-center md:justify-between flex-col md:flex-row md:pr-40 md:pl-20">
+    <div>
+      <a href="./" class="transform transition-all duration-500 hover:scale-105 object-contain">
+        <img src="./assets/images/sbcase-removebg-preview.png" class="max-w-[110px] max-h-[110px] img" alt="" />
+      </a>
+    </div>
+    <ul class="flex gap-6 px-4 my-4">
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent border-white transition-all duration-500 hover:scale-105 text-yellow-200">
+        <a href="./">Home</a>
+      </li>
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent hover:border-white transition-all duration-500 hover:scale-105 hover:text-yellow-200">
+        <a href="#sobre">Sobre</a>
+      </li>
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent hover:border-white transition-all duration-500 hover:scale-105 hover:text-yellow-200">
+        <a href="#menu">Menu</a>
+      </li>
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent hover:border-white transition-all duration-500 hover:scale-105 hover:text-yellow-200">
+        <a href="#unidades"> Unidades</a>
+      </li>
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent hover:border-white transition-all duration-500 hover:scale-105 hover:text-yellow-200">
+        <a href="#contato">Contato</a>
+      </li>
+      <li
+        class="hover:cursor-pointer border-b-2 border-t-2 border-transparent hover:border-white transition-all duration-500 hover:scale-105 hover:text-yellow-200">
+        <a href="#reservas">Reservas</a>
+      </li>
+    </ul>
+    <div class="flex gap-6">
+      <a href="https://instagram.com/" target="_blank" rel="noopener"
+      class="hover:scale-110 transition-transform">
+      <i class="fab fa-instagram text-3xl text-white hover:text-pink-500 hidden sm:inline"></i>
+    </a>
+    <a href="https://wa.me/5584999999999" target="_blank" rel="noopener"
+      class="hover:scale-110 transition-transform ">
+      <i class="fab fa-whatsapp text-3xl text-white hover:text-green-500"></i>
+    </a>
+    </div>
+    
+  </header>
+
+  <!-- Sobre -->
+  <section
+    id="sobre"
+    class="relative w-full h-[40vh] md:h-[500px] bg-[url('https://images.unsplash.com/photo-1720214970364-97ac1311f426?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center flex items-center justify-center">
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+
+    <div class="z-10 flex flex-col gap-2 justify-center md:max-w-[50%] w-full px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 font-serif">
+        "Nosso Sabor Caseiro é mais que comida, é Amor em cada Prato."
+      </h1>
+
+      <p class="text-md md:text-lg font-light text-white font-sans">
+        Nossa missão é entregar a mais autêntica experiência da comida de
+        verdade, feita com o cuidado e a dedicação que só a culinária caseira
+        tem. Porque para nós, qualidade e tradição são o maior tempero do
+        amor.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="bg-gray-100 py-12 px-4 flex flex-col items-center" id="menu">
+    <h2 class="text-4xl font-bold text-center mb-12 font-serif">
+      Conheça nosso Cardápio
+    </h2>
+
+    <div class="swiper mySwiper max-w-7xl w-full relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://images.unsplash.com/photo-1582200371328-11d78e4cea8d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Café"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1">
+                Café
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Puro, forte e coado na hora. O grão 100% arábica com o aroma que conforta. R$ 5,50
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Bolo de amora"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1">
+                Bolo de Amora Caseiro
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Massa macia de baunilha com pedaços frescos de amora e cobertura cítrica de limão. Perfeito para o café.
+                R$ 12,00
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Hamburguer"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1">
+                Hambúrguer Especial
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Pão brioche, blend de 180g de carne, queijo da fazenda, bacon crocante, alface e tomate frescos. R$
+                29,90
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Panqueca"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1">
+                Panquecas Americanas Clássicas
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Massa fofa servida em quatro camadas, coberta com blueberries frescos, rodelas de banana e xarope de
+                bordo. R$ 22,50
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1672242676668-2705ff33fbbc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Prato do dia"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1 text-center">
+                Combo Degustação da Casa (Para 2 Pessoas)
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Inclui: Pizza Média (sabor a escolher), Batatas Rústicas com molho e duas Saladas Caesar Pequenas.
+                Perfeito para o jantar! R$ 79,90
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center w-[300px] h-[250px]">
+          <div class="w-full h-full overflow-hidden object-cover rounded-lg shadow-lg group">
+            <img
+              src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Chocolate quente"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105" />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 cursor-pointer">
+              <h3 class="text-xl font-bold text-white mb-1">
+                Chocolate Quente Cremoso
+              </h3>
+
+              <p class="text-sm text-yellow-200 text-center">
+                Preparado com chocolate belga e leite fresco. Ponto cremoso e suave, servido com chantilly da casa e
+                raspas de canela. R$ 14,00
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mt-[40px]">
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+  </section>
+
+
+  <section class="bg-gray-200  flex flex-col items-center p-6" id="unidades">
+    <h2 class="text-4xl font-bold text-center mb-6 font-serif">
+      Nossas unidades
+    </h2>
+
+    <div class="flex flex-col md:gap-20 md:flex-row gap-4">
+      <div class="text-center">
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/place/R.+Janduis,+1710-1702+-+Lagoa+Nova,+Natal+-+RN,+59054-320/@-5.8177525,-35.2144732,18z/data=!3m1!4b1!4m15!1m8!3m7!1s0x7b25586aa1b911d:0x63b6f465fdfda645!2sCandel%C3%A1ria,+Natal+-+State+of+Rio+Grande+do+Norte!3b1!8m2!3d-5.8402654!4d-35.2171663!16s%2Fg%2F1ymsqr_06!3m5!1s0x7b2fff60bbf9d27:0x5141b76777fe66bb!8m2!3d-5.8177541!4d-35.2137077!16s%2Fg%2F11g64znndb?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D">
+          <img src="./assets/images/restaurantedia.png" alt="Unidade 1" class="rounded-[50%] w-64 transition-transform hover:scale-105">
+        </a>
+
+        <h2 class="text-[20px] font-bold text-center mt-4">Unidade Lagoa Nova</h2>
+        <p>R. Janduis, 1710-1702 - Lagoa Nova</p>
+        <p>Natal/RN</p>
+      </div>
+
+      <div class="text-center">
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/place/R.+Valdir+Targino,+3577+-+Candel%C3%A1ria,+Natal+-+RN,+59064-670/@-5.8422257,-35.2179849,17z/data=!3m1!4b1!4m6!3m5!1s0x7b25580878860f3:0x4c2a353f1af3a3b!8m2!3d-5.842231!4d-35.21541!16s%2Fg%2F11f3nc8y46?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D">
+          <img src="./assets/images/interior.png" alt="Unidade 1" class="rounded-[50%] w-64 transition-transform hover:scale-105">
+        </a>
+        <h2 class="text-[20px] font-bold text-center mt-4">Unidade Candelária</h2>
+
+        <p>R. Valdir Targino, 3577 - Candelária</p>
+        <p>Natal/RN</p>
+      </div>
+
+    </div>
+
+  <section id="reservas" class="bg-gray-200 py-16 px-4 flex justify-center">
+    
+    <div class="max-w-4xl w-full">
+        
+        <div class="max-w-3xl mx-auto bg-[#435326] text-white rounded-2xl p-8 shadow-xl flex flex-col items-center">
+            
+            <h2 class="text-3xl text-yellow-100 lg:text-4xl font-extrabold text-center mb-6 font-serif">
+                Faça sua reserva agora mesmo!
+            </h2>
+            
+            <p class="text-lg text-center leading-relaxed ">
+                Temos o compromisso de atender a todos que nos visitam por ordem de chegada, com muita alegria e satisfação.
+                Caso prefira agendar sua reserva, conheça nossa disponibilidade, escolha a unidade que deseja visitar e preencha o formulário.
+            </p>
+            <a href="/reservas.html" class="text-center mt-6 bg-yellow-700 p-4 rounded-md hover:bg-yellow-600">Reserve Agora</a>
+            
+        </div>
+        
+        </div>
+</section>
+
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-[#435326] text-white ext-center p-6 flex flex-col items-center justify-center gap-4">
+    <p>© 2025 Restaurante Sabor Caseiro - Todos os direitos reservados</p>
+    
+    <div class="flex gap-6">
+      <a href="https://instagram.com/" target="_blank" rel="noopener"
+      class="hover:scale-110 transition-transform">
+      <i class="fab fa-instagram text-3xl text-white hover:text-pink-500 hidden sm:inline"></i>
+    </a>
+    <a href="https://wa.me/5584999999999" target="_blank" rel="noopener"
+      class="hover:scale-110 transition-transform ">
+      <i class="fab fa-whatsapp text-3xl text-white hover:text-green-500"></i>
+    </a>
+    </div>
+  </footer>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
